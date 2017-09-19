@@ -1,0 +1,218 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  margin:0
+} 
+
+#nav {
+  
+  background-color: #404040;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  opacity: 0.85;
+}
+
+.menu {
+  float: right;
+}
+
+#content {
+  position: relative;
+}
+
+#content > .container > div {
+  padding: 80px 0;
+}
+
+.container {
+  
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.menu li {
+  display: inline-block;
+
+  width: 150px;
+  padding: 3px 0px;
+
+  list-style-type: none;
+  text-align: center;
+  background-color: #404040;
+  color: #696969;
+
+}
+
+a {
+  display: block;
+  color: #C0C0C0;
+  text-decoration: none;
+}
+
+li:hover  {
+ 
+}
+
+li:hover a {
+  color: #fff;
+  font-weight: 800;
+}
+
+#about, #project, #contact {
+  
+  color: black;
+}
+
+#my-avatar {
+  
+  float: left;
+  margin: 10px 20px 0 0;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+table {
+  font-size: 14px;
+  text-align: left;
+}
+
+th, td {
+  vertical-align: top;
+  padding-bottom: 10px;
+}
+
+
+td {
+  color: #666;
+  padding-left: 10px;
+}
+
+hr {
+  border: 0.5px solid #eee;
+}
+
+/* project */
+
+#project-gallery {
+  text-align: center;
+}
+
+.item {
+  position: relative;
+  max-width: 30%;
+
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.item img {
+  width: 100%;
+}
+
+.item-info {
+  
+  background-color: rgba(255,255,255,.8);   /* 背景半透明 */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  padding: 25px 10px;
+
+  opacity: 0;
+
+}
+
+.item-info:hover {
+  opacity: 1;
+}
+
+#contact {
+  margin-bottom: 50px;
+}
+
+form.contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.form-row input, .form-row textarea {
+  border-radius: 3px;
+  width: 100%;
+  border: 1px solid #D6D9DC;
+  padding: 7px;
+}
+
+.form-row textarea {
+  resize: none;
+  height: 4em;
+}
+
+.form-row button {
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-left: 5px;
+  float: right;
+
+}
+
+.form-row button[type="submmit"] {
+  background-color: #5995DA;
+  color: #FFFFFF;
+}
+
+.form-row button:hover {
+  background-color: #76AEED;
+}
+
+.form-row button:active {
+  background-color: #407FC7;
+}
+
+hr.bar {
+  border: 2px solid #ff6600;
+  width: 80px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#about h1 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+#content .container #about {
+  padding: 180px 0;
+}
+
+#copyright {
+  text-align: right;
+}
