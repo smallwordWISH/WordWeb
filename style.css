@@ -81,10 +81,17 @@ li:hover a {
 
 h1 {
   margin-top: 0;
+  color: #3B3B3B;
+  font-family: Helvetica, sans-serif;
+  font-weight: 800;
+  text-align: center;
 }
 
 h3 {
-  margin: 0;
+  margin: 5px 0 0 0;
+  color: #3B3B3B;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 table {
@@ -95,6 +102,10 @@ table {
 th, td {
   vertical-align: top;
   padding-bottom: 10px;
+}
+
+th {
+  color: #3B3B3B;
 }
 
 
@@ -158,6 +169,7 @@ form.contact-form {
 
 .form-row {
   margin-bottom: 15px;
+  color: #3B3B3B;
 }
 
 .form-row input, .form-row textarea {
@@ -187,6 +199,10 @@ form.contact-form {
   color: #FFFFFF;
 }
 
+.form-row button[type="reset"] {
+  color: #3B3B3B;
+}
+
 .form-row button:hover {
   background-color: #76AEED;
 }
@@ -200,9 +216,6 @@ hr.bar {
   width: 80px;
 }
 
-h1 {
-  text-align: center;
-}
 
 #about h1 {
   margin-bottom: 0;
@@ -215,4 +228,107 @@ h1 {
 
 #copyright {
   text-align: right;
+  padding: 40px;
+  color: #3B3B3B;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-button, .menu-button-checkbox {
+    display: none;
+  }
+
+}
+
+/* mobile css as following */
+
+@media screen and (max-width: 1023px) {
+  
+  .container {
+    width: auto;
+  }
+
+  .menu-button {
+    float: right;
+    font-size: 25px;
+    line-height: 40px;
+    color: white;
+    background-color: transparent;;
+    padding: 0px 15px;
+    border: 0;
+  }
+
+  .menu-button-checkbox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 40px;
+    opacity: 0;
+  }
+
+  .menu-button-checkbox:checked ~ .menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    margin-top: 0;
+    padding-left: 0;
+    position: fixed;
+    right: 0;
+    top: 40px;
+    width: 150px;
+    height: 100%;
+
+  }
+
+  .menu li{
+    border: 0;
+    border-radius: 0;
+  }
+
+  #my-avatar {
+    width: 100%;
+  }
+
+  #my-avatar img {
+    display: block;
+    margin: 15px auto;
+  }
+
+  table {
+    width: 90%;
+    margin: auto;
+
+  }
+
+  .item {
+    max-width: 100%;
+  }
+
+  form.contact-form {
+    width: 80%;
+  }
+
+  #my-info {
+    margin: 0 15px;
+    text-align: center
+  }
+
+  #my-info h1, #my-info h3 {
+    text-align: center;
+  }
+
+  #copyright {
+    text-align: center;
+  }
+
+  #content .container #about {
+    padding: 80px 0;
+  }
+  
+  #my-info hr {
+    width: 90%;
+  }
+
 }
